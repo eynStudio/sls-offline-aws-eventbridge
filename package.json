@@ -1,0 +1,33 @@
+{
+  "name": "sls-offline-aws-eventbridge",
+  "version": "0.1.0",
+  "description": "Serverless plugin to run aws eventbridge offline.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eynStudio/sls-offline-aws-eventbridge.git"
+  },
+  "keywords": [
+    "serverless",
+    "serverless-offline",
+    "eventbridge",
+    "typescript",
+    "koa"
+  ],
+  "author": "pengshengwang@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eynStudio/sls-offline-aws-eventbridge/issues"
+  },
+  "homepage": "https://github.com/eynStudio/sls-offline-aws-eventbridge#readme",
+  "dependencies": {
+    "@types/koa": "^2.11.3",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/node": "^14.0.27",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0"
+  }
+}
