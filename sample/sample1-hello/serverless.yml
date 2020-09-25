@@ -1,0 +1,27 @@
+service: sample1-hello
+
+plugins:
+  - serverless-offline
+  - sls-offline-aws-eventbridge
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+custom:
+  sls-offline-aws-eventbridge:
+    port: 5656
+
+functions:
+  sayHello:
+    handler: src/hello.say
+
+  handlerSay:
+    handler: src/handler.say
+    events:
+      - eventBridge:
+          pattern:
+            source:
+              - aws.sls
+            detail-type:
+              - OfflineEventBridge
